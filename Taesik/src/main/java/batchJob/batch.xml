@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="batchJob.batch">
+    <select id="select" parameterType="java.util.Map" resultType="batchJob.BatchInfoResponse">
+        <![CDATA[
+		SELECT *
+		FROM `batch_table`
+		WHERE sealNo = #{sealNo}
+		]]>
+    </select>
+    <insert id="insertBatchStart" parameterType="java.util.Map">
+        <![CDATA[
+		INSERT INTO `batch_table` (`batch_date`, `success_code`, `sync_count`, `log_msg`)
+        SELECT #{batch_date}, #{success_code}, #{sync_count}, #{log_msg}
+        FROM DUAL
+        WHERE NOT EXISTS (SELECT 1 FROM `batch_table` WHERE `batch_date` BETWEEN UNIX_TIMESTAMP(CURDATE()) * 1000 AND UNIX_TIMESTAMP(DATE_ADD(CURDATE(), INTERVAL 1 DAY)) * 1000)
+		]]>
+    </insert>
+    <update id="updateBatchInfo" parameterType="java.util.Map">
+        <![CDATA[
+		UPDATE batch_table
+        SET
+        success_code= #{success_code},
+        sync_count = #{sync_count},
+        log_msg = #{log_msg}
+        WHERE
+        batch_date = #{batch_date}
+		]]>
+    </update>
+    <delete id="delete" parameterType="java.util.Map">
+        <![CDATA[
+        DELETE FROM batch_table
+        WHERE batch_time < #{currentBatchTime}
+        ]]>
+    </delete>
+</mapper>
