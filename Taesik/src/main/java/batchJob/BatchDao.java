@@ -19,7 +19,7 @@ import java.util.Map;
  */
 public class BatchDao {
 	private static final String NAMESPACE = "batchJob.batch";
-	@Qualifier("sampleSqlSessionTemplate")
+	@Qualifier("sampleSql")
 	@Autowired
 	private SqlSessionTemplate sqlSessionTemplate;
 
