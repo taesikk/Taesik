@@ -1,0 +1,51 @@
+{
+  "input": {
+    "send_pdfs": [
+      {
+        "document_id": "d012ae14b10249b6aabb707709d00315",
+        "pdf_send_infos": [
+          {
+            "name": "홍길동1",
+            "method": "sms",
+            "method_info": "01011112222",
+            "code": "+82",
+            "sms_option": {
+              "auth_valid_time": 168,
+              "auth_pwd": "1111",
+              "auth_pwd_hint": "1111",
+              "use_mobile_auth": true
+            }
+          }
+        ]
+      },
+      {
+        "document_id": "f2ada078f1f94e979f311149d4617f18",
+        "pdf_send_infos": [
+          {
+            "name": "홍길동2",
+            "method": "sms",
+            "method_info": "01011112222",
+            "code": "+82",
+            "sms_option": {
+
+            }
+          }
+        ]
+      },
+      {
+        "document_id": "f2ada078f1f94e979f311149d4617f18",
+        "pdf_send_infos": [
+          {
+            "name": "홍길동3",
+            "method": "email",
+            "method_info": "dlwhsktm@gmail.com",
+            "code": "",
+            "sms_option": {
+
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

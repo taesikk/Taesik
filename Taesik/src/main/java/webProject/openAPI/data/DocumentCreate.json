@@ -1,0 +1,40 @@
+{
+  "document": {
+    "document_name": "개인정보제공동의서",
+    "comment": "서명 완료하였습니다.",
+    "recipients": [
+      {
+        "step_type": "01"
+      }
+    ],
+    "fields": [
+      {
+        "id": "고객명",
+        "value": "홍길동"
+      },
+      {
+        "id": "회사명",
+        "value": "(주)포시에스"
+      }
+    ],
+    "select_group_name": "",
+    "notification": [
+      {
+        "name": "홍길동",
+        "sms": {
+          "country_code": "+82",
+          "phone_number": "01023456789"
+        },
+        "auth": {
+          "password": "6789",
+          "password_hint": "휴대폰번호 뒷자리를 입력해주세요.",
+          "mobile_verification": true,
+          "valid": {
+            "day": 7,
+            "hour": 0
+          }
+        }
+      }
+    ]
+  }
+}

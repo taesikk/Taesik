@@ -1,0 +1,28 @@
+{
+  "input": {
+    "next_steps": [
+      {
+        "step_type": "05",
+        "approvers": [
+          {
+            "seq": 1,
+            "user_id": "dlwhsktm@hs.ac.kr",
+            "user_name": "홍길동",
+            "code": "+82",
+            "number": "1023456789",
+            "auth_password": "",
+            "auth_hint": "",
+            "auth_valid_time": 96,
+            "approval_line_name": "",
+            "use_mobile_auth": false,
+            "use_mobile_auth_view": false,
+            "unselected_sections": [
+
+            ]
+          }
+        ],
+        "comment": "재요청입니다."
+      }
+    ]
+  }
+}

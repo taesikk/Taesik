@@ -1,0 +1,25 @@
+{
+  "account": {
+    "id": "test1@forcs.com",
+    "password": "1111",
+    "name": "test1",
+    "contact": {
+      "tel": "01023456789",
+      "number": "01034567890",
+      "country_number": "+82"
+    },
+    "department": "연구소",
+    "position": "연구원",
+    "agreement": {
+      "marketing": true
+    },
+    "role": [
+      "company_manager",
+      "template_manager"
+    ],
+    "external_sso_info": {
+      "uuid": "123456789",
+      "account_id": "dlwhsktm@gmail.com"
+    }
+  }
+}

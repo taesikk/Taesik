@@ -1,0 +1,17 @@
+{
+  "account": {
+    "id": "test1@forcs.com",
+    "name": "홍길동",
+    "enabled": true,
+    "contact": {
+      "number": "01023456789",
+      "tel": "022345678"
+    },
+    "department": "연구소",
+    "position": "연구원",
+    "role": [
+      "company_manager",
+      "template_manager"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tester2@forcs.com",
+    "password": "1111",
+    "name": "홀란드",
+    "contact": {
+      "tel": "0233334444",
+      "number": "01022223333",
+      "country_number": "+82"
+    },
+    "department": "연구소",
+    "position": "연구원",
+    "agreement": {
+      "marketing": true
+    },
+    "role": [
+      "company_manager",
+      "template_manager"
+    ],
+    "external_sso_info": {
+      "uuid": "test102",
+      "account_id": "dlwhsktm@gmail.com"
+    }
+  },
+  {
+    "id": "tester4@forcs.com",
+    "password": "1111",
+    "name": "더브라위너",
+    "contact": {
+      "tel": "0312223333",
+      "number": "01023456789",
+      "country_number": "+82"
+    },
+    "department": "경영기획실",
+    "position": "사원",
+    "agreement": {
+      "marketing": true
+    },
+    "role": [
+      "template_manager"
+    ],
+    "external_sso_info": {
+      "uuid": "test103",
+      "account_id": "dlwhsktm@gmail.com"
+    }
+  }
+]

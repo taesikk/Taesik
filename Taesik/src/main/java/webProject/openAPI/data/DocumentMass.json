@@ -1,0 +1,79 @@
+{
+  "documents": [
+    {
+      "select_group_name": "",
+      "document_name": "일괄 작성 테스트_1",
+      "fields": [
+        {
+          "id": "이름",
+          "value": "홍길동"
+        },
+        {
+          "id": "주소",
+          "value": "서울특별시 강남구 논현로 646, 3층"
+        }
+      ],
+      "recipients": [
+        {
+          "step_type": "05",
+          "use_mail": true,
+          "use_sms": true,
+          "member": {
+            "name": "김이폼",
+            "id": "dlwhsktm@gmail.com",
+            "sms": {
+              "country_code": "+82",
+              "phone_number": "1023456789"
+            }
+          },
+          "auth": {
+            "password": "6789",
+            "password_hint": "휴대폰 번호 뒷 네 자리를 입력하세요.",
+            "valid": {
+              "day": 7,
+              "hour": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "select_group_name": "",
+      "document_name": "일괄 작성 테스트_2",
+      "fields": [
+        {
+          "id": "이름",
+          "value": "김길동"
+        },
+        {
+          "id": "주소",
+          "value": "서울특별시 강남구 논현로 646, 4층"
+        }
+      ],
+      "recipients": [
+        {
+          "step_type": "05",
+          "use_mail": true,
+          "use_sms": true,
+          "member": {
+            "name": "이이폼",
+            "id": "dlwhsktm@gmail.com",
+            "sms": {
+              "country_code": "+82",
+              "phone_number": "1022223333"
+            }
+          },
+          "auth": {
+            "password": "3333",
+            "password_hint": "휴대폰 번호 뒷 네 자리를 입력하세요.",
+            "valid": {
+              "day": 7,
+              "hour": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "comment": "문서 일괄 작성 테스트입니다."
+}

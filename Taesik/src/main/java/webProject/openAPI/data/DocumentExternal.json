@@ -1,0 +1,29 @@
+{
+  "document": {
+    "document_name": "개인정보제공동의서",
+    "comment": "동의합니다.",
+    "recipients": [
+      {
+        "step_type": "01"
+      }
+    ],
+    "fields": [
+      {
+        "id": "고객명",
+        "value": "홍길동"
+      }
+    ],
+    "select_group_name": "",
+    "send_external_pdf": {
+      "email": "dlwhsktm@gmail.com",
+      "sms": {
+        "country_code": "+82",
+        "phone_number": "01023456789"
+      },
+      "auth": {
+        "password": "6789",
+        "password_hint": "휴대폰번호 뒷자리를 입력하세요."
+      }
+    }
+  }
+}
