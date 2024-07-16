@@ -51,8 +51,7 @@ public class BatchServiceImpl implements BatchcService {
 		}
 
 		try {
-			// 마당 api 요청 및 반환
-			String sealInfo = connectionSealInfo(baseUrl, clientId, clientSecret, grantType, scope);
+			String sealInfo = "";
 
 			if ("".equals(sealInfo)) {
 				return;
