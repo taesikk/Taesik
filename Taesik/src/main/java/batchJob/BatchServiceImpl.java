@@ -27,7 +27,7 @@ import java.util.*;
 
 @Service
 @PropertySource(value = "classpath:batch.properties", ignoreResourceNotFound = true)
-public class BatchServiceImpl implements BatchcService {
+public class BatchServiceImpl implements BatchService {
 	private static final Logger logger = LoggerFactory.getLogger(BatchServiceImpl.class);
 
 	@Autowired
