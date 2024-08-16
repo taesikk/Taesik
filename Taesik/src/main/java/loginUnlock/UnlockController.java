@@ -1,6 +1,7 @@
 package loginUnlock;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +18,8 @@ public class UnlockController {
 	 * js 파일에서 ajax 통신으로 넘어온 요청 받는 controller
 	 * Restful API (POST, GET)
 	 */
+	@Autowired
+	UnlockService unlockService;
 	@RequestMapping(value = "/controller", method = RequestMethod.POST)
 	public Map<String, String> unlock(
 			HttpServletRequest request, HttpServletResponse response, Locale locale, @RequestParam(required = false) String lang,
@@ -26,7 +29,7 @@ public class UnlockController {
 
 
 		Unlock unlockVO = new Unlock(requestBody);
-		Unlock unlockOTP = unlockDao.sendUnlockOTP(otpVendor, accountId, unlockVO);
+		Unlock unlockOTP = unlockService.sendUnlockOTP(otpVendor, accountId, unlockVO);
 		if (unlockOTP == null) {
 			return;
 		}
