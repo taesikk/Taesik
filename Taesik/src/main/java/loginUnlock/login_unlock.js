@@ -10,9 +10,9 @@ var authCount = 0;
 var init = function() {
     var timer = null;
     var second = 1000;
-    var minute = second * 60;
+    var minute = second * 60; // 인증번호 유효시간 타이머 변수
 
-    var recaptchaToken = '';
+    var recaptchaToken = ''; // Google Recaptcha token
 
     if (REG_EXP_EMAIL.test(accountId) && smsNumber != '') {
         userMail.text(accountId);
@@ -83,6 +83,7 @@ var init = function() {
         ajaxProc(requestURL, 'GET', '', true, successCallback, errorCallback);
     });
 
+    // timer 시작 function
     var startTimer = function($certTimer) {
         stopTimer();
         $certTimer.removeClass('ct_hide');

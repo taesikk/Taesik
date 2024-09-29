@@ -1,5 +1,10 @@
 package loginUnlock;
 
+import com.google.gson.Gson;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -19,10 +24,13 @@ import javax.persistence.*;
 @Table(name = "table_unlock")
 public class Unlock {
 	@Id
-	@GeneratedValue(strategy = "")
 	@Column(nullable = false)
 	private Long id;
 	@Column(name = "create_date")
 	private Long createDate;
 
+	public Unlock setUnlock(String body) {
+		Gson gson = new Gson();
+		return gson.fromJson(body, Unlock.class);
+	};
 }
